@@ -3,11 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.project</groupId>
+        <groupId>com.project.movieinfo</groupId>
         <artifactId>Movie-Info-Service</artifactId>
-        <version>0.0.1-SNAPSHOT</version><!-- lookup parent from repository -->
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.project</groupId>
     <artifactId>rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>rest</name>
@@ -38,13 +37,13 @@
             <version>2.9.2</version>
         </dependency>
         <dependency>
-            <groupId>com.project</groupId>
+            <groupId>com.project.movieinfo</groupId>
             <artifactId>api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.project</groupId>
+            <groupId>com.project.movieinfo</groupId>
             <artifactId>core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
