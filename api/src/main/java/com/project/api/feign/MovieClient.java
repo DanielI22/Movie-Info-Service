@@ -9,5 +9,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(name = "MOVIE-SERVICE", url = "http://localhost:8090")
 public interface MovieClient {
     @RequestMapping(method = RequestMethod.GET, value = "/movie/")
-    MovieResponse getMovie(@RequestParam String movieId);
+    MovieResponse getMovie(@RequestParam Long movieId);
 }

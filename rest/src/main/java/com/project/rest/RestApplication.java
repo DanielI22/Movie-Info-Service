@@ -20,4 +20,5 @@ public class RestApplication {
     public RestTemplate getRestTemplate() {
         return new RestTemplateBuilder().errorHandler(new RestTemplateResponseErrorHandler()).build();
     }
+
 }

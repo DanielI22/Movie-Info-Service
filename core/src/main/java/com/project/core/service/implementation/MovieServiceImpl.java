@@ -23,7 +23,7 @@ public class MovieServiceImpl implements MovieService {
     }
 
     @Override
-    public MovieResponse getMovie(String movieId) {
+    public MovieResponse getMovie(Long movieId) {
         String url = "https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" + apiKey;
         return movieAPIResponseToMovieResponseMapper.mapResponse(Objects.requireNonNull(restTemplate
                 .getForObject(url, MovieAPIResponse.class)));

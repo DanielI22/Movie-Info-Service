@@ -1,6 +1,6 @@
 package com.project.rest.config;
 
-import com.project.core.exception.MovieNotFoundException;
+import com.project.api.exception.MovieNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.web.client.ResponseErrorHandler;

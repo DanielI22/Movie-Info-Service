@@ -13,7 +13,7 @@ public class MovieController {
     }
 
     @GetMapping("/movie/")
-    public MovieResponse getMovie(@RequestParam String movieId) {
+    public MovieResponse getMovie(@RequestParam Long movieId) {
         return movieService.getMovie(movieId);
     }
 }
