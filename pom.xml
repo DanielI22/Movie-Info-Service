@@ -21,6 +21,7 @@
         <module>api</module>
         <module>rest</module>
         <module>core</module>
+        <module>data</module>
     </modules>
 
     <dependencies>

@@ -1,8 +1,8 @@
-package com.project.core.service.implementation;
+package com.project.core.implementation;
 
 import com.project.api.model.MovieResponse;
-import com.project.core.data.externalmodel.MovieAPIResponse;
-import com.project.core.service.interfaces.MovieService;
+import com.project.core.interfaces.MovieService;
+import com.project.data.externalmodel.MovieAPIResponse;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

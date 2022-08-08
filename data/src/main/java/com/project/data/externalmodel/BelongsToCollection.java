@@ -1,4 +1,4 @@
-package com.project.core.data.externalmodel;
+package com.project.data.externalmodel;
 
 public class BelongsToCollection{
     public int id;

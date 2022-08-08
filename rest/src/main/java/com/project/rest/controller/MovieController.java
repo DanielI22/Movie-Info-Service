@@ -1,7 +1,7 @@
 package com.project.rest.controller;
 
 import com.project.api.model.MovieResponse;
-import com.project.core.service.interfaces.MovieService;
+import com.project.core.interfaces.MovieService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

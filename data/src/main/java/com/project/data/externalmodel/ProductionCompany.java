@@ -1,4 +1,4 @@
-package com.project.core.data.externalmodel;
+package com.project.data.externalmodel;
 
 import lombok.Getter;
 import lombok.Setter;

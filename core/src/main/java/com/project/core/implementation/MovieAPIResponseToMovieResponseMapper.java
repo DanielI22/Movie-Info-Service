@@ -1,7 +1,7 @@
-package com.project.core.service.implementation;
+package com.project.core.implementation;
 
 import com.project.api.model.MovieResponse;
-import com.project.core.data.externalmodel.MovieAPIResponse;
+import com.project.data.externalmodel.MovieAPIResponse;
 import org.springframework.stereotype.Service;
 
 @Service
