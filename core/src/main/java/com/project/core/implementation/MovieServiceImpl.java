@@ -1,5 +1,6 @@
 package com.project.core.implementation;
 
+import com.project.core.exception.MovieNotFoundException;
 import com.project.api.model.MovieResponse;
 import com.project.core.interfaces.MovieService;
 import com.project.data.externalmodel.MovieAPIResponse;
@@ -25,7 +26,12 @@ public class MovieServiceImpl implements MovieService {
     @Override
     public MovieResponse getMovie(Long movieId) {
         String url = "https://api.themoviedb.org/3/movie/" + movieId + "?api_key=" + apiKey;
-        return movieAPIResponseToMovieResponseMapper.mapResponse(Objects.requireNonNull(restTemplate
-                .getForObject(url, MovieAPIResponse.class)));
+        try {
+            return movieAPIResponseToMovieResponseMapper.mapResponse(Objects.requireNonNull(restTemplate
+                    .getForObject(url, MovieAPIResponse.class)));
+        }
+        catch (Exception e) {
+            throw new MovieNotFoundException();
+        }
     }
 }
