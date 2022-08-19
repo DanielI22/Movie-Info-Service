@@ -1,14 +1,14 @@
 package com.project.rest.controller;
 
 import com.project.api.model.MovieResponse;
-import com.project.core.interfaces.MovieService;
+import com.project.core.interfaces.MovieServiceProcessor;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class MovieController {
-    private final MovieService movieService;
+    private final MovieServiceProcessor movieService;
 
-    public MovieController(MovieService movieService) {
+    public MovieController(MovieServiceProcessor movieService) {
         this.movieService = movieService;
     }
 
